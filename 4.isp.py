@@ -4,44 +4,43 @@ Crie interfaces que são específicas. Clientes não devem depender de interface
 """
 from abc import ABC
 
-class IShape(ABC):
-    def draw_square(self):
+class IJanela(ABC):
+    def maximizar(self):
         raise NotImplementedError
     
-    def draw_rectangle(self):
+    def minimizar(self):
         raise NotImplementedError
     
-    def draw_circle(self):
+    def mostrar_menu(self):
+        raise NotImplementedError
+        
+    def fechar(self):
         raise NotImplementedError
 
-
-class Circle(IShape):
-    def draw_square(self):
+class JanelaTamanhoFixo(IJanela):
+    def maximizar(self):
         pass
 
-    def draw_rectangle(self):
+    def minimizar(self):
         pass
     
-    def draw_circle(self):
-        pass
-
-class Square(IShape):
-    def draw_square(self):
-        pass
-
-    def draw_rectangle(self):
+    def mostrar_menu(self):
         pass
     
-    def draw_circle(self):
+    def fechar(self):
+        raise NotImplementedError
+
+class JanelaSemMenu(IShape):
+    def maximizar(self):
         pass
 
-class Rectangle(IShape):
-    def draw_square(self):
-        pass
-
-    def draw_rectangle(self):
+    def minimizar(self):
         pass
     
-    def draw_circle(self):
+    def mostrar_menu(self):
         pass
+    
+    def fechar(self):
+        raise NotImplementedError
+
 
