@@ -2,8 +2,9 @@
 Interface Segregation Principle
 Crie interfaces que são específicas. Clientes não devem depender de interfaces que eles não usarão
 """
+from abc import ABC
 
-class IShape:
+class IShape(ABC):
     def draw_square(self):
         raise NotImplementedError
     
