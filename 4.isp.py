@@ -30,7 +30,7 @@ class JanelaTamanhoFixo(IJanela):
     def fechar(self):
         raise NotImplementedError
 
-class JanelaSemMenu(IShape):
+class JanelaSemMenu(IJanela):
     def maximizar(self):
         pass
 
