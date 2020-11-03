@@ -10,6 +10,14 @@ class Animal:
     def get_name(self) -> str:
         pass
 
+    def make_sound(self):
+        if self.name == 'lion':
+            print('roar')
+        elif self.name == 'mouse':
+            print('squeak')
+        else:
+            print('...')
+
 animals = [
     Animal('lion'),
     Animal('mouse')
@@ -17,11 +25,7 @@ animals = [
 
 def animal_sound(animals: list):
     for animal in animals:
-        if animal.name == 'lion':
-            print('roar')
-
-        elif animal.name == 'mouse':
-            print('squeak')
+        animal.make_sound()
 
 animal_sound(animals)
 
