@@ -28,7 +28,7 @@ class JanelaTamanhoFixo(IJanela):
         pass
     
     def fechar(self):
-        raise NotImplementedError
+        pass
 
 class JanelaSemMenu(IJanela):
     def maximizar(self):
@@ -41,6 +41,6 @@ class JanelaSemMenu(IJanela):
         pass
     
     def fechar(self):
-        raise NotImplementedError
+        pass
 
 
